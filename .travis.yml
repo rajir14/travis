@@ -6,7 +6,7 @@ before_install:
 script:
  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
  - docker images # to verify image is build or not
- - docker push rajir14/travis:v4.0
+ - docker push rajir14/travis:v2.0
 notifications:
  email:
    recipients:
